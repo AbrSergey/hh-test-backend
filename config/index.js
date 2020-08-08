@@ -2,7 +2,7 @@ const fs = require('fs');
 
 const appConfig = {
   app: {
-    port: 80
+    port: 8080
   },
   db: {
     url: process.env.DB_URL
