@@ -34,7 +34,6 @@ module.exports.get = async (req, res, next) => {
     ];
     
     res.status(200).json({
-      count,
       data: educationData
     });
   } catch (err) {
