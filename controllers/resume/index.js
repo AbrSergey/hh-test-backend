@@ -1,5 +1,5 @@
 module.exports = {
-  socalLinks: require('./socalLinks'),
+  socialLinks: require('./socialLinks'),
   generalInformation: require('./generalInformation'),
   skills: require('./skills'),
   education: require('./education')
