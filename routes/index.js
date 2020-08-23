@@ -11,6 +11,6 @@ router.get('/resume/general_information', resume.generalInformation.get);
 router.get('/resume/skills', resume.skills.get);
 router.get('/resume/education', resume.education.get);
 
-router.get('/resume/token', resume.token.post);
+router.post('/resume/token', resume.token.post);
 
 module.exports = router;
