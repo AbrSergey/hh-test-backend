@@ -9,6 +9,12 @@ module.exports.post = async (req, res, next) => {
       data: req.body
     });
 
+    let access_token;
+    if (data.indexOf('access_token=') !== -1) {
+      access_token = data.substring('access_token='.length, data.indexOf('&scope='));
+    }
+    else throw new Error(data);
+    
     res.status(200).json(data);
   } catch (err) {
     next(err);
