@@ -15,7 +15,7 @@ module.exports.post = async (req, res, next) => {
     }
     else throw new Error(data);
     
-    res.status(200).json({ code: access_token });
+    res.status(200).json(access_token);
   } catch (err) {
     next(err);
   }
